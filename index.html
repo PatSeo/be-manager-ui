@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <script src="./script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/tailwindcss">
+
+    @import "tailwindcss";
+
+  </style>
+</head>
+<body class="bg-[#ECF3FD] w-full lg:max-w-5xl md:max-w-3xl min-w-xs mx-auto px-4 my-4">
+  
+  <header class="">
+    <div class="grid grid-cols-2 items-center bg-[#FCFDFF] rounded-xl p-3">
+      <img src="./assets/images/logo.svg" alt="">
+      <img src="./assets/images/icon-moon.svg" alt="" class="justify-self-end p-3 bg-gray-200 hover:bg-gray-300 rounded-xl">
+    </div>
+  </header>
+
+  <nav class="grid sm:grid-cols-2 sm:items-center sm:justify-items-normal grid-cols-1 grid-columns-2 justify-items-center mt-5">
+    <h1 class="font-bold text-2xl">Extensions List</h2>
+    <ul class="flex gap-4 p-4 sm:justify-self-end">
+      <li  tabindex="0" id="all" class="focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 bg-[#FCFDFF] rounded-full px-3 py-1 hover:bg-[#f25c54] hover:text-[#FCFDFF] cursor-pointer border border-[#ededed]" onclick="filter('all')">All</li>
+      <li  tabindex="0" id="active" class="focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 bg-[#FCFDFF] rounded-full px-3 py-1 hover:bg-[#f25c54] hover:text-[#FCFDFF] cursor-pointer border border-[#ededed]" onclick="filter(true)">Active</li>
+      <li  tabindex="0" id="inactive" class="focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 bg-[#FCFDFF] rounded-full px-3 py-1 hover:bg-[#f25c54] hover:text-[#FCFDFF] cursor-pointer border border-[#ededed]" onclick="filter(false)">Inactive</li>
+    </ul>
+  </nav>
+  <main id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-xs sm:w-full mx-auto">
+
+
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
